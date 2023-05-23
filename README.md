@@ -5,7 +5,9 @@ sudo apt-get install python3-venv
 python3 -m venv myvenv
 source myvenv/bin/activate
 ```
-- Install required packages. PyTorch and PyTorch-Geometric are installed with Cuda 10.1.
+- Install required packages. 
+- We followed the same experimental setting with 
+- "Hsu et al., "What Makes Graph Neural Networks Miscalibrated?" (NeurIPS'22)
 ```
 pip install -r requirements.txt
 ```
