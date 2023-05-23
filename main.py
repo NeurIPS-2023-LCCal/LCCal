@@ -200,9 +200,9 @@ if __name__ == '__main__':
      
     # LCCal 
     parser.add_argument('--eps', type=float, default=0.1, help='a small value to avoid zero temperature')
-    parser.add_argument('--b_over', type=float, default=1, help='temperature controling factor for nodes expected to be overconfident')
-    parser.add_argument('--b_under', type=float, default=1, help='temperature controling factor for nodes expected to be underconfident')
-    parser.add_argument('--default_l', type=float, default=0.4, help='base LCC value to divide over/underconfident cases')
+    parser.add_argument('--b_over', type=float, default=0.1, help='temperature controling factor for nodes expected to be overconfident')
+    parser.add_argument('--b_under', type=float, default=0, help='temperature controling factor for nodes expected to be underconfident')
+    parser.add_argument('--default_l', type=float, default=0.35, help='base LCC value to divide over/underconfident cases')
     parser.add_argument('--n_bins', type=int, default=15, help='#(confidence intervals)')
     parser.add_argument('--n_LCC_bins', type=int, default=5, help='#(LCC intervals)')
     
